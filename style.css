@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+body{font-family: 'Open Sans', sans-serif; font-weight:400; font-size:16px; line-height:26px; color:#000; margin:0;}
+a{color:#b84a4a;}
+a:hover{text-decoration:none; color:#000;}
+a:focus, button:focus, .btn:focus{outline:none; box-shadow:none;}
+
+a,.header,.snav i,button{-webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; transition: all 0.2s linear;}
+
+strong{font-weight:700;}
+
+.header{position:relative; position:fixed; left:0; top:0; width:100%; z-index:99; padding:30px 0; background:rgba(255,255,255,0);}
+.header.shrink{padding:10px 0; background:rgba(255,255,255,.95);
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24);
+-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24);
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24);
+}
+.logo{max-width:100px; display:block;}
+.shrink .logo{max-width:50px;}
+
+.menu {list-style: none; margin: 0; padding:0; font-size:0;}
+.menu li {display:inline-block; position:relative; padding:0 0 0 80px;}
+.menu li a {font-size:18px; font-weight:700; line-height:45px; color:#000; text-transform:uppercase; display:block; padding: 0;}
+.menu > li:hover > a, .menu > li.active > a{color:#b84a4a;}
+
+.menu li ul{display:none; position:absolute; left:0; right:0; margin:0; padding:10px 0; text-align:center; background: #000; min-width:200px;}
+.menu li li{display:block; padding:5px 15px;}
+.menu li li a{line-height:normal; font-size:14px;}
+.menu li li a:hover{color:#fcc34a;}
+.menu li:hover ul{display:block;}
+
+.sphotos{font-size:0;}
+.sphotos img{display:inline-block; width:23%; height:300px; object-fit:cover; border-radius:10px; margin:1%}
+
+.form-control{margin-bottom:10px; border-radius:0; font-size:14px;}
+#contactform .cbtn{border:none; line-height:normal; text-transform:uppercase;}
+#contactform .cbtn:hover{background:#000; color:#fff;}
+
+.vbox img{height:85px; margin-bottom:15px;}
+
+.cbtn{background:#b84a4a; font-size:14px; color:#fff; padding:12px 28px; letter-spacing:1px;}
+.cbtn:hover{background:#fff;}
+
+.ftop{color: #b0b0b0; background:#000000; font-size:18px; border-bottom:1px solid #1c1c1c; padding:30px 0;}
+.footer{padding:45px 0; text-align:center; color: #333333; background:#000000; font-size:13px; line-height:24px;}
+.footer a{color:#b0b0b0;}
+.footer a:hover{color:#fff;}
+.flinks a{display:inline-block;  padding:5px 15px;}
+.social a{display:inline-block; margin:0 7px; padding:6px 0; font-size:16px; width:30px; height:30px; border:1px solid #b0b0b0; border-radius:100%;}
+
+@media (min-width:1200px) {
+.container{max-width:1160px;}
+}
+@media (max-width:1199.98px) {
+	
+}
+@media (max-width:991.98px) {
+.footer{padding:30px 0;}	
+}
+@media (max-width: 767.98px) {
+.header, .header.shrink{padding:5px 0;}
+
+/* .snav{vertical-align:middle; background:none; border:none; padding:0; margin:0; line-height:0; width:25px; cursor:pointer; z-index: 998; position: relative;}	
+.snav i{display:block; background:#ef4c44; height:3px;}
+.snav i+i{margin-top:4px;}
+.snav.openbtn i:nth-child(1){
+-moz-transform: rotate(45deg) translateX(5px) translateY(5px);
+-webkit-transform: rotate(45deg) translateX(5px) translateY(5px);
+-o-transform: rotate(45deg) translateX(5px) translateY(5px);
+-ms-transform: rotate(45deg) translateX(5px) translateY(5px);
+transform: rotate(45deg) translateX(5px) translateY(5px);
+}
+.snav.openbtn i:nth-child(2){opacity:0;}
+.snav.openbtn i:nth-child(3){
+-moz-transform: rotate(-45deg) translateX(5px) translateY(-5px);
+-webkit-transform: rotate(-45deg) translateX(5px) translateY(-5px);
+-o-transform: rotate(-45deg) translateX(5px) translateY(-5px);
+-ms-transform: rotate(-45deg) translateX(5px) translateY(-5px);
+transform: rotate(-45deg) translateX(5px) translateY(-5px);
+}
+
+.menu{position:absolute; right:0; top: 34px; width: 210px; background: #fff; padding: 0; display:none;
+-webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+.menu li{padding: 5px 15px; display:block;}
+.menu li a{line-height:normal;}
+.menu li ul{position:relative; text-align: right; display:block; padding:0; background:none;}
+.menu li li{padding:0;}
+.menu li li a{line-height: normal; font-size: 12px; padding: 5px 0;} */
+}
+@media (max-width: 575.98px) {
+	
+}

@@ -1,0 +1,4 @@
+name = 'form-handler-worker'
+type = 'javascript'
+account_id = '724e49e3c76fb7222decee6b641ca220'
+workers_dev = true

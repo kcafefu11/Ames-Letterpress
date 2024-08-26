@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<title>Ames Letterpress | Contact</title>
+<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body class="contact">
+<div class="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-auto"><a href="index.html" class="logo"><img src="images/logo.png" class="img-fluid"/></a></div>
+      <div class="col text-right">
+	    <!--<button class="d-inline-block d-md-none snav" type="button"><i></i><i></i><i></i></button>-->
+        <ul class="menu">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="about.html">About</a></li>
+          <li class=""><a href="services.html">Services</a></li>
+		  <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div><img src="images/inner.jpg" class="w-100" style="height:160px;"/></div><div class="container py-5">
+
+<h1>Contact</h1>
+<hr />
+<div class="row">
+<div class="col-md-6"><p><strong>Ames Letterpress Inc.</strong><br>
+20757 Plummer Street, Chatsworth, CA 91311</p>
+<p>Hours: <strong>Monday thru Friday, 8:30 to 5:00</strong></p>
+<p>
+Email: <a href="mailto:amesletterpress@aol.com"><strong>amesletterpress@aol.com</strong></a><br>
+Phone: <!--<a href="tel:8185271390"><strong>818.527.1390</strong></a>--><a href="tel:8185271390"><strong>818-527-1390</strong></a><br>  
+Fax: <strong>818.527.1413</strong></p>
+</div>
+<div class="col-md">
+<form name="contactform" id="contactform" action="https://form-handler-worker.amesletterpress.workers.dev">
+	<input type="text" class="form-control" name="name" placeholder="Name"/>
+	<input type="text" class="form-control" name="email" placeholder="Email"/>
+	<input type="text" class="form-control" name="subject" placeholder="Subject"/>  
+    <textarea name="comment" class="form-control" placeholder="Message" rows="3"></textarea>
+	<input class="cbtn" type="submit" name="button" id="button" value="Submit"  />
+	<input type="hidden" name="script_type"  value="contactform"/>
+	<span id="contactform_error" class="error"></span><span id="contactform_success" class="error"></span>
+</form>
+</div>
+</div>
+</div>
+<div style="line-height:0">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3298.2157328828675!2d-118.5884936852953!3d34.243038415099726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c29c995089c9f5%3A0x293c0d3e3f062e32!2s20757+Plummer+St%2C+Chatsworth%2C+CA+91311%2C+USA!5e0!3m2!1sen!2sin!4v1562852269328!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="ftop">
+  <div class="container">
+	<div class="row align-items-center justify-content-center">
+	  <div class="col-auto">20757 Plummer Street, Chatsworth, CA 91311</div>
+	  <div class="col-auto"><!--<a href="tel:8189829008" class="cbtn">(818) 982-9008</a>--><a href="tel:8185271390" class="cbtn">818-527-1390</a></div>
+	</div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+	<div class="flinks"><a href="index.html">Home</a><a href="about.html">About Ames</a><a href="services.html">Services</a><a href="letterpress-and-sample.html">Letterpress & Sample</a><a href="contact.html">Contact</a></div>
+	<div class="mb-4">&copy; Ames Letterpress Inc. 2024 All rights Reserved.<br>
+Developed & Designed by <a href="http://www.digitalvertex.com/" target="_blank">DigitalVertex</a>.</div>
+<div class="social"><a href="https://www.facebook.com/Ames-Letterpress-Inc-1407349892883226/?eid=ARDxt-9hu85MNplhWjk1nA52tbHINfwQ2o38fJR869Ru92z6ViwQYRoDbkd25TETgsvaWoa23A77ZSji" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+// Header Sticky
+var HeaderSticky = function() {
+    'use strict';
+    // Handle Header Sticky
+    var handleHeaderSticky = function() {
+        // On loading, check to see if more than 15px, then add the class
+        if ($('.header').offset().top > 80) {
+            $('.header').addClass('shrink');
+        }
+        // On scrolling, check to see if more than 15px, then add the class
+        $(window).on('scroll', function() {
+            if ($('.header').offset().top > 80) {
+                $('.header').addClass('shrink');
+            } else {
+                $('.header').removeClass('shrink');
+            }			
+        });
+    }
+    return {
+        init: function() {
+            handleHeaderSticky(); // initial setup for header sticky
+        }
+    }
+}();
+
+$(document).ready(function() {
+    HeaderSticky.init();
+});
+</script> 
+<!--<script>
+$(document).ready(function(){
+	$(".snav").click(function () {
+		$(this).toggleClass('openbtn');
+		$('.menu').animate({
+			height: "toggle"
+			}, 500, function() {
+				
+		});
+	});	
+});
+</script>-->
+<script type="text/javascript">
+ $(document).ready(function() {
+	$("#contactform").submit(function(event){
+ event.preventDefault();
+		$("#contactform_error").html('<img src="images/loading.gif" align="absmiddle" />');
+		$.post("https://form-handler-worker.amesletterpress.workers.dev",
+  .fail(function(jqXHR, textStatus, errorThrown) {
+  console.error("Error: " + textStatus + " " + errorThrown);
+  $("#contactform_error").html("An error occurred. Please try again.");
+  })
+.fail(function(jqXHR, textStatus, errorThrown) {
+ console.error("Error: " + textStatus + " " + errorThrown);
+ $("#contactform_error").html("An error occurred. Please try again.");
+})
+		$("#contactform").serialize(),
+			function(data){
+				if(data=='OK'){
+					
+				}
+				else if(data=='Thank you for contacting us.'){
+					$("#contactform")[0].reset();
+					$("#contactform_success").html(data);
+					$("#contactform_error").html('');
+				}
+				else{
+					$("#contactform_error").html(data);
+				}
+			}
+		);
+		return false;
+	});
+});
+</script>
+</body></html>

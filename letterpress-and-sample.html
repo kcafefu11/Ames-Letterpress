@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<title>Ames Letterpress | Letterpress & Sample</title>
+<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.2/css/all.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body class="letterpress">
+<div class="header">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-auto"><a href="index.html" class="logo"><img src="images/logo.png" class="img-fluid"/></a></div>
+      <div class="col text-right">
+	    <!--<button class="d-inline-block d-md-none snav" type="button"><i></i><i></i><i></i></button>-->
+        <ul class="menu">
+          <li class=""><a href="index.html">Home</a></li>
+          <li class=""><a href="about.html">About</a></li>
+          <li class=""><a href="services.html">Services</a></li>
+		  <li class=""><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div><img src="images/inner.jpg" class="w-100" style="height:160px;"/></div><div class="container py-5">
+	<h1>Letterpress & Sample</h1>
+	<hr />
+	<div class="row align-items-center mb-5">
+		<div class="col-md-6">
+		<p><strong>Ames Lefferpress provides</strong> letterpress printing for trade and special occasions. Letterpress printing is a term for the relief printing of text and image using a press with a "type-high bed" printing press and movable type, in which a reversed, raised surface is inked and then pressed into a sheet of paper to obtain a positive ight-reading image. It was the normal form of printing text in the west from its invention by Johannes Gutenberg in the mid-15th century  until the 19th century and remained in wide use for books and other uses until the second half of the 20th century.</p>
+		</div>
+		<div class="col-md-6">
+			<div class="form-row">
+				<div class="col-6"><img src="images/sample_001.jpg" class="img-fluid"/></div>
+				<div class="col-6"><img src="images/sample_002.jpg" class="img-fluid"/></div>
+			</div>
+			
+			</div>
+		</div>
+		<div class="row align-items-center">
+		<div class="col-md-6 order-md-12">
+		<p><strong>Along with lefferpress printing</strong> for that special occasion, other services Ames Letterpress offers is foil stamping, embossing, die cutting, perfing, scoring, numbering, crash imprinting. Call <strong>(818) 982-9008</strong> or e-mail for more info.</p>
+		</div>
+		<div class="col-md-6">
+			<div class="form-row">
+				<div class="col-6"><img src="images/sample_003.jpg" class="img-fluid"/></div>
+				<div class="col-6"><img src="images/sample_004.jpg" class="img-fluid"/></div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-light">
+<div class="container py-5">
+	<div class="row align-items-center">
+		<div class="col-auto"><a data-fancybox="" data-width="640" data-height="360" href="images/v1.mp4"><img src="images/v1.jpg" class="img-fluid"/></a></div>
+		<div class="col text-center"><h2 class="m-0"><strong>Be sure to click on the images</strong> to view a short video sample of our presses in action.</h2></div>
+		<div class="col-auto"><a data-fancybox="" data-width="640" data-height="360" href="images/v2.mp4"><img src="images/v2.jpg" class="img-fluid"/></a></div>
+	</div>
+</div>
+</div>
+<div class="ftop">
+  <div class="container">
+	<div class="row align-items-center justify-content-center">
+	  <div class="col-auto">20757 Plummer Street, Chatsworth, CA 91311</div>
+	  <div class="col-auto"><!--<a href="tel:8189829008" class="cbtn">(818) 982-9008</a>--><a href="tel:8185271390" class="cbtn">818-527-1390</a></div>
+	</div>
+  </div>
+</div>
+<div class="footer">
+  <div class="container">
+	<div class="flinks"><a href="index.html">Home</a><a href="about.html">About Ames</a><a href="services.html">Services</a><a href="letterpress-and-sample.html">Letterpress & Sample</a><a href="contact.html">Contact</a></div>
+	<div class="mb-4">&copy; Ames Letterpress Inc. 2024 All rights Reserved.<br>
+Developed & Designed by <a href="http://www.digitalvertex.com/" target="_blank">DigitalVertex</a>.</div>
+<div class="social"><a href="https://www.facebook.com/Ames-Letterpress-Inc-1407349892883226/?eid=ARDxt-9hu85MNplhWjk1nA52tbHINfwQ2o38fJR869Ru92z6ViwQYRoDbkd25TETgsvaWoa23A77ZSji" target="_blank"><i class="fab fa-facebook-f"></i></a></div>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+// Header Sticky
+var HeaderSticky = function() {
+    'use strict';
+    // Handle Header Sticky
+    var handleHeaderSticky = function() {
+        // On loading, check to see if more than 15px, then add the class
+        if ($('.header').offset().top > 80) {
+            $('.header').addClass('shrink');
+        }
+        // On scrolling, check to see if more than 15px, then add the class
+        $(window).on('scroll', function() {
+            if ($('.header').offset().top > 80) {
+                $('.header').addClass('shrink');
+            } else {
+                $('.header').removeClass('shrink');
+            }			
+        });
+    }
+    return {
+        init: function() {
+            handleHeaderSticky(); // initial setup for header sticky
+        }
+    }
+}();
+
+$(document).ready(function() {
+    HeaderSticky.init();
+});
+</script> 
+<!--<script>
+$(document).ready(function(){
+	$(".snav").click(function () {
+		$(this).toggleClass('openbtn');
+		$('.menu').animate({
+			height: "toggle"
+			}, 500, function() {
+				
+		});
+	});	
+});
+</script>-->
+<script type="text/javascript">
+ $(document).ready(function() {
+	$("#contactform").submit(function(){
+		$("#contactform_error").html('<img src="images/loading.gif" align="absmiddle" />');
+		$.post("script.html",
+		$("#contactform").serialize(),
+			function(data){
+				if(data=='OK'){
+					
+				}
+				else if(data=='Thank you for contacting us.'){
+					$("#contactform")[0].reset();
+					$("#contactform_success").html(data);
+					$("#contactform_error").html('');
+				}
+				else{
+					$("#contactform_error").html(data);
+				}
+			}
+		);
+		return false;
+	});
+});
+</script>
+</body></html>
