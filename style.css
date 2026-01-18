@@ -51,7 +51,7 @@ box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.24);
 .container{max-width:1160px;}
 }
 @media (max-width:1199.98px) {
-	
+    
 }
 @media (max-width:991.98px) {
 .footer{padding:30px 0;}	
@@ -90,5 +90,26 @@ box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 .menu li li a{line-height: normal; font-size: 12px; padding: 5px 0;} */
 }
 @media (max-width: 575.98px) {
-	
+    
+}
+
+/* Sticky farewell banner (below fixed header) */
+.closure-announcement{
+  position: sticky;
+  top: 80px;             /* sits below header; adjust if needed */
+  z-index: 98;           /* below header (99), above page content */
+  background: #f8f9fa;   /* light gray bar behind the content */
+  padding: 12px 0;
+}
+
+.closure-announcement-inner{
+  background: #ffffff;
+  border: 1px solid #dee2e6;
+  padding: 14px 18px;
+  text-align: center;
+}
+
+.closure-announcement h2{
+  font-weight: 700;
+  margin: 0 0 8px 0;
 }
